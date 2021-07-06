@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+h1{
+    font-size: 80px;
+    color: #e5ebef;
+}
+h2{
+    font-size: 50px;
+    margin-top: 120px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 25px;
+}
+.header_bg{
+    background-image: url(images/bg-img.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.header_bg:after{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    content:"";
+    background:#000;
+    top:0;
+    left:0;
+    z-index: -1;
+    opacity:.7;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+.logo h1 {
+    color: #ffa500;;
+    font-size: 35px;
+    margin-bottom: -40px;
+}
+.logo p {
+    color: #fff;
+    font-size: 10px;
+    margin: 22px 0px 0px 20px;
+}
+.navbar li{
+    list-style-type: none;
+    display: inline-flex;
+}
+.navbar li a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 12px;
+    transition: 0.3s;
+}
+.navbar li a:hover{
+    color: #ffa500;
+}
+.sing-in{
+    border: 1px solid #ffa500;
+    padding: 10px 40px 10px 10px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+.header-content{
+    margin: 5% 0 0 14%;
+}
+.desh {
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    margin-left: 35px;
+}
+.desh::after {
+    position: absolute;
+    left: -35px;
+    top: 8px;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #ffa500;;
+    border-radius: 20px;
+}
+.hd-cont p{
+    color: #e5ebef;
+    margin: -25px 0px 40px 0px;
+    line-height: 2;
+}
+.hd-cont a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    background: #ffa500;
+    padding: 20px 40px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}/* header-bg css end*/
+.flexible{
+    display: flex;
+}
+.half-width{
+    width: 50%;
+    margin-right: 5%;
+    margin: 5% 5% 0 5%;
+    height: 100vh;
+}
+.half-width:last-child{
+    margin-right: 0;
+}
+.half-width img{
+    width: 100%;
+}
+.span-color{
+    color: #ffa500;
+}
+.half-btn{
+    text-decoration: none;
+    background-image: linear-gradient(to right, #e7ad40, #e03f3f);
+    padding: 14px 30px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.half-btn:hover{
+    color: #ffa500;
+    background-image: none;
+    border: 2px solid #ffa500;
+}
+.half-width p {
+    line-height: 2;
+    margin-bottom: 50px;
+    color: #afafaf;
+}/*skip-content css end*/
+.about-content{
+    background-image: url(images/bg-frame.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.desh h6 {
+    color: #000;
+    margin-top: 90px;
+}
+.half-width video {
+    margin-top: 40px;
+    width: 100%;
+    min-height: 500px;
+}/*about-content css end*/
+.recipes-content{
+    height: 100vh;
+}
+.three-box-content{
+    margin: 0 5% 0 5%;
+}
+.recipes-others h4{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.recipes-others p{
+    margin-bottom: 60px;
+    text-align: center;=
+}
+.three-step{
+    width: 25%;
+    height: 410px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  35px 35px 70px #a8a8a8,
+                -35px -35px 70px #ffffff;
+}
+.three-step img{
+    width: 90%;
+    border-radius: 25px;
+    padding: 15px;
+    transition: 0.2s linear;
+}
+.three-step img:hover{
+    transform: scale(.9);
+}
+.three-step h4 {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.three-step p{
+    padding:  0 20px 15px 20px;
+    justify-content: center;
+    line-height: 1.5;
+    text-align: justify;
+}/*recipes-content css*/
+.cunter-up{
+    margin: 8% 5% 8% 5%;
+    background: #ffff;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    border-radius: 50px;
+}
+.project-counter-wrap ul{
+    list-style-type: none;
+    display: flex;
+}
+.project-counter-wrap ul li{
+    width: 33.33%;
+    height: 100%;
+    padding: 30px 0px;
+    text-align: center;
+    transition: 0.2s linear;
+    border-radius: 50px;
+}
+.project-counter-wrap ul li:hover{
+    transform: scale(1.1);
+}
+.project-counter-wrap ul li p.number{
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+}
+.project-counter-wrap ul li p{
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}/*project-counter-wrap css end*/
+.contact-section{
+    margin: 0 5% 0 5%;
+    height: 100vh;
+}
+.contact-section h3 {
+    text-align: center;
+    padding-top: 30px;
+}
+.contact-section p {
+    text-align: center;    
+    margin-bottom: 10%;
+}
+.contact-page{
+    display: flex;
+}
+.half-contact{
+    width: 50%;
+}
+.half-contact input[type="text"] {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.half-contact input[type="email"]{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+input[type="mail"] {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 90%;
+    margin: 50px 0px;
+}
+textarea {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+.send-btn {
+    text-decoration: none;
+    background: orange;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 3px;
+}
+.mr-buttom{
+    margin-bottom: 50px;
+}/*contact-section css end*/
+.footer-area{
+    background: #000;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+}
+.footer-area h5{
+    padding-top: 20px;
+}
+.footer-area p {
+    font-size: 10px;
+    margin-top: -15px;
+}
